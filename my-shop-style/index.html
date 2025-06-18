@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop Style</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    
+   <header>
+    <main>
+        <div class="search-bar">
+           <input type="text" id="search-input" placeholder="Search products...">
+        </div>
+    </main>
+    <nav>
+        <ul>
+          <li><a href="#" onclick="event.preventDefault(); showSection('home')">Home</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">You</a></li>
+          <li><a href="auth/login.html">Login</a></li>
+          <li><a href="auth/signup.html">Signup</a></li>
+        </ul>
+      </nav>
+
+      <div class="color">
+        <h1>Welcome To My Shop Style</h1>
+    </div>
+   </header> 
+   <div class="Banner">
+    <p>BRAND</p> <span></span>
+    <P>Fashion Designer</P> <span></span>
+    <p>EXCLUSIVE FASHION SALE COMING SOON</p>
+   </div>
+
+      <!--products /home section-->
+   <div id="home-section">
+    <h2>Products</h2>
+    <div id="product-list"></div>
+  </div>
+  
+<!--cart section-->
+<div id="cart-section" style="display: none;">
+    <h3>Your Cart</h3>
+    <div id="cart"></div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+  </div>
+ 
+
+      
+   
+   <script src="main.js"></script>
+   
+
+</body>
+</html
